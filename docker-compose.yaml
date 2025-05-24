@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  strudel-dev:
+    build: .
+    ports:
+      - "4321:4321"        # http://localhost:4321
+    volumes:
+      - .:/usr/src/app     # live-reload on file edits
+    restart: unless-stopped
