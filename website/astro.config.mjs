@@ -137,7 +137,7 @@ export default defineConfig({
   vite: {
     plugins: [bundleAudioWorkletPlugin()],
     server: {                   // listen on all interfaces in the container
-     allowedHosts: ['strudel.sailehd.systems'],
+     allowedHosts: [ site ],
     },
     ssr: {
       // Example: Force a broken package to skip SSR processing, if needed
